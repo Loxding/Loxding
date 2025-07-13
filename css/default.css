@@ -1,0 +1,20 @@
+html {
+    font-family: Arial, serif;
+    background-color: #3e3e3e;
+    color: #ffffff;
+}
+h1 {
+    text-align: center;
+}
+.information_box {
+    border: 8px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background: url("../images/backgroundinfobox.png") no-repeat;
+    border-image: url("../images/borderinfobox.png") 16;
+    background-size: 100% 100%;
+    color: #000000;
+}
