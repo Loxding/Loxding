@@ -3,6 +3,12 @@ html {
     background-color: #ffffff;
     color: #000000;
 }
+@font-face {
+    font-family: "Minecraft";
+    src: url("../font/minecraft_font.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 h1 {
     text-align: center;
 }
