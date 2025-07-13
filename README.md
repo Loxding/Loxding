@@ -1,16 +1,16 @@
-## Hi there 👋
-
-<!--
-**Loxding/Loxding** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Hello World!
+### I am Loxding
+- **Pronouns**: He/Him
+- **Languages**: 
+  - Known: Python, HTML, CSS
+  - Kinda Know: Java
+  - Learning: SQL, JavaScript
+- **Interests**: Programming and Existing.
+- **Hobbies**: Dungeons and Dragons.
+- **System**:
+  - Windows 11 (Need it for school programs)
+  - Android (IOS is not for me (Not saying it's bad))
+- **Socals**:
+  - [GitHub](https://github.com/Loxding)
+  - [YouTube](https://www.youtube.com/@loxding)
+  - [Bluesky](https://bsky.app/profile/loxding.dev)
