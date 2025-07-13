@@ -6,12 +6,22 @@ html {
 h1 {
     text-align: center;
 }
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
 .information_box {
+    color: var(--text-color);
+    --text-color-shadow: color-mix(in srgb, var(--text-color) 90%, black 45%);
+    font-family: Minecraft, serif;
     border: 8px solid transparent;
     display: inline-block;
-    padding: 10px;
+    margin: 0 0 0 35px;
+    padding: 12px;
     background: url("../images/backgroundinfobox.png") no-repeat;
     border-image: url("../images/borderinfobox.png") 16;
     background-size: 100% 100%;
-    color: #000000;
+    text-shadow: var(--text-color-shadow) 1px 1px 1px;
 }
