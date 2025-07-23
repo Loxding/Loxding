@@ -5,7 +5,7 @@ html {
 }
 @font-face {
     font-family: "Minecraft";
-    src: url("../font/minecraft_font.ttf") format("truetype");
+    src: url("../font/minecraft.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -18,6 +18,7 @@ h2 {
 h3 {
     text-align: center;
 }
+
 .information_box {
     color: var(--text-color);
     --text-color-shadow: color-mix(in srgb, var(--text-color) 90%, black 45%);
