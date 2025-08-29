@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2a79d0ad-7e8d-4982-be2f-a0157b1f083f" name="Changes" comment="Changed Font again and added a testing page">
+      <change afterPath="$PROJECT_DIR$/Loxding/js/text_colors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/about-me.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/about-me.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/default2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/indexr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loxding/images/backgroundinfobox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loxding/images/borderinfobox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loxding/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Loxding/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Loxding&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Loxding/Loxding.git&quot;,
+    &quot;accountId&quot;: &quot;be323ea8-6361-4d72-a473-72e9af11d886&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2zq4vCBTagnYzihajnU3wt9ZC56" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/traft/OneDrive/Documents/GitHub/Loxding/css",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\traft\OneDrive\Documents\GitHub\Loxding\css" />
+      <recent name="C:\Users\traft\OneDrive\Documents\GitHub\Loxding" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\traft\OneDrive\Documents\GitHub\Loxding\font" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a79d0ad-7e8d-4982-be2f-a0157b1f083f" name="Changes" comment="" />
+      <created>1752445498761</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752445498761</updated>
+      <workItem from="1752445500325" duration="3103000" />
+      <workItem from="1752513985202" duration="441000" />
+      <workItem from="1752514697994" duration="318000" />
+      <workItem from="1752696393887" duration="45000" />
+      <workItem from="1752696462166" duration="317000" />
+      <workItem from="1752890984552" duration="321000" />
+      <workItem from="1752956742029" duration="1057000" />
+      <workItem from="1753061690849" duration="595000" />
+      <workItem from="1753312591575" duration="71000" />
+      <workItem from="1755474183795" duration="4680000" />
+    </task>
+    <task id="LOCAL-00001" summary="Made the tooltip way better">
+      <option name="closed" value="true" />
+      <created>1752447636194</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752447636194</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added the minecraft font">
+      <option name="closed" value="true" />
+      <created>1752447995780</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752447995780</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Made the favicon.ico better">
+      <option name="closed" value="true" />
+      <created>1752448311284</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752448311284</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Changed the structure">
+      <option name="closed" value="true" />
+      <created>1752448410774</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752448410774</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changed info to information">
+      <option name="closed" value="true" />
+      <created>1752448590801</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1752448590801</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Changed Font again and added a testing page">
+      <option name="closed" value="true" />
+      <created>1753312657293</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1753312657293</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Made the tooltip way better" />
+    <MESSAGE value="Added the minecraft font" />
+    <MESSAGE value="Made the favicon.ico better" />
+    <MESSAGE value="Changed the structure" />
+    <MESSAGE value="Changed info to information" />
+    <MESSAGE value="Changed Font again and added a testing page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Font again and added a testing page" />
+  </component>
+</project>
