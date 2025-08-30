@@ -1,0 +1,62 @@
+/*@font-face {*/
+/*    font-family: 'Minecraft';*/
+/*    src: url('font/minecraft.ttf') format('truetype');*/
+/*}*/
+header {
+    text-align: center;
+    font-family: Arial, serif;
+    color: white;
+    text-shadow: 0 0 10px blue, -5px 5px 10px aqua, 0 0 10px blue;
+    animation: title-animation 15s linear infinite;
+}
+@keyframes title-animation {
+    0% {
+        text-shadow: 0 0 10px blue, -5px 5px 10px aqua, 0 0 10px rebeccapurple;
+        color: rgba(255,255,255,0.5);
+    }
+    50% {
+        text-shadow: 0 0 10px rebeccapurple, -5px -5px 10px blue, 0 0 10px aqua;
+        color: rgba(255,255,255,1);
+    }
+    75% {
+        text-shadow: 0 0 10px blue, 5px -5px 10px rebeccapurple, 0 0 10px blue;
+        color: rgba(255,255,255,1);
+    }
+    100% {
+        text-shadow: 0 0 10px blue, -5px 5px 10px aqua, 0 0 10px rebeccapurple;
+        color: rgba(255,255,255,0.5);
+    }
+}
+nav {
+    text-align: center;
+    font-family: Arial, serif;
+    text-shadow: 1px 1px 1px gray;
+    box-sizing: border-box;
+    background-color: #6e6e6e;
+    padding: 10px;
+    left: 0;
+    width: 100%;
+    color: white;
+    border-radius: 15px;
+    a {
+        color: white;
+    }
+}
+main {}
+footer{
+    font-size: 12px;
+    a {
+        color: white;
+    }
+    box-shadow: 0 0 15px blue, 0 0 15px aqua;
+    font-family: Arial, serif;
+    text-align: left;
+    text-shadow: 1px 1px 1px gray;
+    color: white;
+    position: fixed;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007a5c;
+}

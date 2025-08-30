@@ -5,7 +5,7 @@ html {
 }
 @font-face {
     font-family: "Minecraft";
-    src: url("../font/minecraft.ttf") format("truetype");
+    src: url("../../font/minecraft.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
