@@ -21,8 +21,8 @@ h3 {
 
 .information_box {
     color: var(--text-color);
-    --text-color-shadow: color-mix(in srgb, var(--text-color) 90%, black 45%);
-    font-family: Minecraft, serif;
+    --text-color-shadow: color-mix(in srgb, var(--text-color) 50%, black 80%);
+    font-family: Minecraft, Arial, serif;
     border: 8px solid transparent;
     display: inline-block;
     margin: 0 0 0 35px;
