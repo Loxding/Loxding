@@ -2,10 +2,18 @@
 /*    font-family: 'Minecraft';*/
 /*    src: url('font/minecraft.ttf') format('truetype');*/
 /*}*/
+html {
+    background-color: #ffffff;
+    background-image: url("../images/background.svg");
+    background-attachment: fixed;
+    background-size: cover;
+}
 header {
     text-align: center;
     font-family: Arial, serif;
     color: rgba(255,255,255,0.8);
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
     text-shadow: 0 0 10px blue, -5px 5px 10px aqua, 0 0 10px blue;
     animation: title-animation 15s linear infinite;
 }
@@ -40,9 +48,50 @@ nav {
     border-radius: 15px;
     a {
         color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #9c9c9c;
     }
 }
-main {}
+main {
+    ul {
+        list-style: pronouns;
+    }
+    font-family: Arial, serif;
+    .MyName::after{
+        content: "Loading";
+        /*color: white;*/
+        /*text-shadow: 1px 1px 1px gray;*/
+        /*border: 12px solid transparent;*/
+        /*background: url("../images/backgroundinfobox.png") no-repeat;*/
+        /*border-image: url("../images/borderinfobox.png") 16;*/
+        /*display: inline-block;*/
+        /*padding: 12px;*/
+        /*background-size: 100% 100%;*/
+        animation: MyUsername 15s ease-in-out infinite;
+    }
+}
+@counter-style pronouns {
+    system: fixed;
+    symbols: 💖 👍 👎 😂;
+    suffix: " ";
+}
+@keyframes MyUsername {
+    0%   {
+        content: "Loxding";
+    }
+    33%  {
+        content: "LoadingYT";
+    }
+    66%  {
+        content: "Loxding.dev";
+    }
+    100% {
+        content: "Loading";
+    }
+
+}
 footer{
     font-size: 12px;
     a {
