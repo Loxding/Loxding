@@ -8,37 +8,39 @@ html {
     background-attachment: fixed;
     background-size: cover;
 }
+
 header {
     text-align: center;
     font-family: Arial, serif;
-    color: rgba(255,255,255,0.8);
-    background-color: rgba(0,0,0,0.5);
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     text-shadow: 0 0 10px blue, -5px 5px 10px aqua, 0 0 10px blue;
     animation: title-animation 15s linear infinite;
 }
+
 @keyframes title-animation {
     0% {
         text-shadow: 0 0 10px blue, -5px 5px 10px aqua, 0 0 10px rebeccapurple;
-        color: rgba(255,255,255,0.5);
+        color: rgba(255, 255, 255, 0.5);
     }
     50% {
         text-shadow: 0 0 10px rebeccapurple, -5px -5px 10px blue, 0 0 10px aqua;
-        color: rgba(255,255,255,1);
+        color: rgba(255, 255, 255, 1);
     }
     75% {
         text-shadow: 0 0 10px blue, 5px -5px 10px rebeccapurple, 0 0 10px blue;
-        color: rgba(255,255,255,1);
+        color: rgba(255, 255, 255, 1);
     }
     100% {
         text-shadow: 0 0 10px blue, -5px 5px 10px aqua, 0 0 10px rebeccapurple;
-        color: rgba(255,255,255,0.5);
+        color: rgba(255, 255, 255, 0.5);
     }
 }
+
 nav {
     text-align: center;
-    font-family: Arial, serif;
-    text-shadow: 1px 1px 1px gray;
+    font-family: Verdana, serif;
     box-sizing: border-box;
     background-color: #6e6e6e;
     padding: 10px;
@@ -46,20 +48,81 @@ nav {
     width: 100%;
     color: white;
     border-radius: 15px;
+
     a {
         color: white;
         text-decoration: none;
     }
+
     a:hover {
-        color: #9c9c9c;
+        color: #4FE;
     }
 }
 main {
-    ul {
-        list-style: pronouns;
+    .cubes {
+        vertical-align: top;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        ul {
+            margin: 10px 10px 10px 10px;
+            list-style: none;
+            color: black;
+            display: inline-block;
+            border-radius: 10%;
+            padding: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            animation: MainShinyBox 15s ease-in-out infinite;
+
+            .Liked {
+                font-size: 20px;
+                animation: MainShinyText 10s ease-in-out infinite;
+                color: rgba(255, 255, 255, 0.5);
+
+                img {
+                    height: 25px;
+                    content: url("../images/icons/heart.svg");
+                }
+            }
+
+            .Okay {
+                color: #444;
+                font-size: 17px;
+
+                img {
+                    height: 17px;
+                    content: url("../images/icons/thumbs-up.svg");
+                }
+            }
+
+            .meh {
+                color: #444;
+                font-size: 17px;
+
+                img {
+                    content: url("../images/icons/meh.svg");
+                    height: 17px;
+                }
+            }
+
+            .NotPreferred {
+                color: #888;
+                font-size: 15px;
+
+                img {
+                    content: url("../images/icons/thumbs-down.svg");
+                    height: 15px;
+                }
+            }
+        }
     }
+
     font-family: Arial, serif;
-    .MyName::after{
+
+    .MyName::after {
         content: "Loading";
         /*color: white;*/
         /*text-shadow: 1px 1px 1px gray;*/
@@ -72,19 +135,51 @@ main {
         animation: MyUsername 15s ease-in-out infinite;
     }
 }
+
+@keyframes MainShinyText {
+    0% {
+        text-shadow: 0 0 10px deeppink, -5px 5px 10px aqua, 0 0 10px rebeccapurple;
+    }
+    50% {
+        text-shadow: 0 0 10px rebeccapurple, -5px -5px 10px deeppink, 0 0 10px aqua;
+    }
+    75% {
+        text-shadow: 0 0 10px aqua, 5px -5px 10px rebeccapurple, 0 0 10px deeppink;
+    }
+    100% {
+        text-shadow: 0 0 10px deeppink, -5px 5px 10px aqua, 0 0 10px rebeccapurple;
+    }
+}
+
+@keyframes MainShinyBox {
+    0% {
+        box-shadow: 0 0 10px deeppink, -5px 5px 10px aqua, 0 0 10px rebeccapurple;
+    }
+    50% {
+        box-shadow: 0 0 10px rebeccapurple, -5px -5px 10px deeppink, 0 0 10px aqua;
+    }
+    75% {
+        box-shadow: 0 0 10px aqua, 5px -5px 10px rebeccapurple, 0 0 10px deeppink;
+    }
+    100% {
+        box-shadow: 0 0 10px deeppink, -5px 5px 10px aqua, 0 0 10px rebeccapurple;
+    }
+}
+
 @counter-style pronouns {
-    system: fixed;
+    system: cyclic;
     symbols: 💖 👍 👎 😂;
     suffix: " ";
 }
+
 @keyframes MyUsername {
-    0%   {
+    0% {
         content: "Loxding";
     }
-    33%  {
+    33% {
         content: "LoadingYT";
     }
-    66%  {
+    66% {
         content: "Loxding.dev";
     }
     100% {
@@ -92,11 +187,15 @@ main {
     }
 
 }
-footer{
+
+footer {
     font-size: 12px;
+
     a {
         color: white;
+        text-decoration: none;
     }
+
     box-shadow: 0 0 15px blue, 0 0 15px aqua;
     font-family: Arial, serif;
     text-align: left;
