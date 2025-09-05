@@ -76,8 +76,8 @@ main {
     }
 line-height: 1.7;
     code {
-        background-color: #32ffb8;
-        border: 2px solid rgba(0, 136, 100, 0.55);
+        background-color: rgba(32, 174, 132, 0.75);
+        border: 2px solid rgba(0, 110, 81, 0.55);
         animation: CodeShinyText 15s ease-in-out infinite;
         border-radius: 5px;
         padding: 2px;
@@ -233,6 +233,30 @@ line-height: 1.7;
         content: "Lox";
     }
 
+}
+a .discord {
+    display: inline-block;
+    visibility: hidden;
+    width: 100px;
+    background-color: rgba(0, 117, 117, 0.5);
+    border: 2px solid rgba(0, 255, 255, 0.55);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 0;
+
+    position: absolute;
+    z-index: 1;
+    margin-left: -100px;
+    margin-top: 100px;
+    opacity: 0;
+    transform: translateY(0);
+}
+a:hover .discord {
+    transform: translateY(-10px);
+    opacity: 1;
+    transition: opacity 0.3s, transform 0.3s;
+    visibility: visible;
 }
 
 footer {
