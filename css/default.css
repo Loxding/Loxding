@@ -69,19 +69,18 @@ main {
         display: inline-block;
         padding: 15px;
         color: white;
-        border: 12px solid transparent;
-        background: url("../images/backgroundinfobox.png") no-repeat;
+        border: 16px solid transparent;
+        background: url("../images/bio-background.png") no-repeat;
         background-size: 100% 100%;
-        border-image: url("../images/borderinfobox.png") 16;
+        border-image: url("../images/bio-border.png") 16;
     }
 line-height: 1.7;
     code {
-        background-color: rgba(32, 174, 132, 0.75);
-        border: 2px solid rgba(0, 110, 81, 0.55);
-        animation: CodeShinyText 15s ease-in-out infinite;
+        background-color: rgba(0, 51, 51, 0.55);
+        border: 2px solid rgba(0, 217, 223, 0.75);
         border-radius: 5px;
         padding: 2px;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgb(207, 255, 239);
         font-family: Arial, serif;
     }
     .cubes {
@@ -95,7 +94,6 @@ line-height: 1.7;
         h3 {
             font-size: 20px;
             text-align: center;
-            color: black;
         }
         ul {
             margin: 10px 10px 10px 10px;
@@ -157,8 +155,8 @@ line-height: 1.7;
         /*color: white;*/
         /*text-shadow: 1px 1px 1px gray;*/
         /*border: 12px solid transparent;*/
-        /*background: url("../images/backgroundinfobox.png") no-repeat;*/
-        /*border-image: url("../images/borderinfobox.png") 16;*/
+        /*background: url("../images/bio-background.png") no-repeat;*/
+        /*border-image: url("../images/bio-border.png") 16;*/
         /*display: inline-block;*/
         /*padding: 12px;*/
         /*background-size: 100% 100%;*/
@@ -234,16 +232,16 @@ line-height: 1.7;
     }
 
 }
-a .discord {
+a .tooltip {
     display: inline-block;
     visibility: hidden;
-    width: 100px;
+    width: auto;
     background-color: rgba(0, 117, 117, 0.5);
     border: 2px solid rgba(0, 255, 255, 0.55);
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 2px 0;
+    padding: 2px 5px;
 
     position: absolute;
     z-index: 1;
@@ -252,7 +250,7 @@ a .discord {
     opacity: 0;
     transform: translateY(0);
 }
-a:hover .discord {
+a:hover .tooltip {
     transform: translateY(-10px);
     opacity: 1;
     transition: opacity 0.3s, transform 0.3s;
