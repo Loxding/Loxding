@@ -5,7 +5,7 @@ html {
 }
 @font-face {
     font-family: "Minecraft";
-    src: url("../../font/minecraft.ttf") format("truetype");
+    src: url("../../../font/minecraft.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -27,8 +27,8 @@ h3 {
     display: inline-block;
     margin: 0 0 0 35px;
     padding: 12px;
-    background: url("../../images/bio-background.png") no-repeat;
-    border-image: url("../../images/bio-border.png") 16;
+    background: url("../../../images/bio-background.png") no-repeat;
+    border-image: url("../../../images/bio-border.png") 16;
     background-size: 100% 100%;
     text-shadow: var(--text-color-shadow) 1px 1px 1px;
 }
