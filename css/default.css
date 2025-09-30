@@ -6,26 +6,39 @@
 /* General Styles */
 
 html {
-    background-color: #ffffff;
-    background-image: url("../images/background.svg");
+    background-image: url("../images/background2.svg"), linear-gradient(rgba(0, 255, 255, 0.2), rgb(255, 255, 255, 0.2));
+    background-color: rgb(255, 255, 255);
+    background-repeat: repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 16px;
 }
 
 /* Structure Element Styles */
 
 header {
-    text-align: center;
-    font-family: Arial, serif;
-    color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    text-shadow: 0 0 10px blue, -5px 5px 10px aqua, 0 0 10px blue;
-    animation: title-animation 15s linear infinite;
+    h1 {
+        display: inline-block;
+        text-align: left;
+        font-family: Arial, serif;
+        color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        margin: 0 0 0 2em;
+        padding: 10px;
+        text-shadow: 0 0 10px blue, -5px 5px 10px aqua, 0 0 10px blue;
+        span:nth-child(1) {
+            font-family: verdana, Arial, serif;
+            animation: title-animation 15s linear infinite;
+        }
+        span:nth-child(2) {
+            font-size: 0.8em;
+            text-shadow: 0 0 5px red;
+        }
+    }
 }
 
 nav {
-    text-align: center;
+    text-align: left;
     font-family: Verdana, serif;
     box-sizing: border-box;
     background-color: #6e6e6e;
