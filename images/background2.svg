@@ -2,5 +2,5 @@
      shape-rendering="geometricPrecision" width="25" height="25"
      style="background-color:rgba(0,255,242,0.1)">
     <rect style="mix-blend-mode:luminosity" width="24" height="24" rx="2" ry="2"
-          transform="matrix(1.000001 0 0 1 0.499999 0.5) translate(0 0)" fill="none" stroke="rgba(0,255,242,0.1)"/>
+          transform="matrix(1 0 0 1 0.5 0.5) translate(0 0)" fill="none" stroke="rgba(0,255,242,0.1)"/>
 </svg>

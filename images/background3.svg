@@ -1,0 +1,10 @@
+<svg id="eKSFkahrbZY1" xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 35 35" width="35" height="35"
+     shape-rendering="geometricPrecision"
+     style="background-color:rgba(0,255,242,0.1)">
+    <rect style="mix-blend-mode:luminosity"
+          width="24" height="24" rx="2" ry="2"
+          transform="rotate(45 17.5 17.5)"
+          x="5.5" y="5.5"
+          fill="none" stroke="rgba(0,255,242,0.1)"/>
+</svg>
