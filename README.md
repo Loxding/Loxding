@@ -4,7 +4,7 @@
 - **Languages**: 
   - Known: Python, HTML, CSS
   - Kinda Know: Java, JavaScript
-  - Learning: SQL, JavaScript
+  - Learning: SQL, PHP
 - **Interests**: Programming and Existing.
 - **Hobbies**: Dungeons and Dragons.
 - **System**:
