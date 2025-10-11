@@ -2,9 +2,9 @@
 ### I am Loxding
 - **Pronouns**: He/Him
 - **Languages**: 
-  - Known: Python, HTML
-  - Kinda Know: Java, CSS
-  - Learning: SQL, JavaScript
+  - Known: Python, HTML, CSS
+  - Kinda Know: Java, JavaScript
+  - Learning: SQL, PHP
 - **Interests**: Programming and Existing.
 - **Hobbies**: Dungeons and Dragons.
 - **System**:
