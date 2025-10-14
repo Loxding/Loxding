@@ -177,27 +177,67 @@ code::selection {
   padding: 0;
   font-size: 0;
 }
-.socials a {
+.socials a[data-social] {
+  --width: 29px;
   position: relative;
   display: inline-block;
-}
-.socials a img {
-  height: 68px;
-  width: 58px;
+  height: 34px;
+  width: var(--width);
+  background-image: url("../images/socals_sprite.png");
+  background-repeat: no-repeat;
+  transform: scale(2);
+  transform-origin: left top;
   image-rendering: pixelated;
-  transition: opacity 0.1s ease;
+  margin-right: var(--width);
 }
-.socials a img:nth-child(2) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
+.socials a[data-social][data-social=youtube] {
+  background-position: 0 -136px;
 }
-.socials a:hover img:nth-child(1) {
-  opacity: 0;
+.socials a[data-social][data-social=twitch] {
+  background-position: -29px -136px;
 }
-.socials a:hover img:nth-child(2) {
-  opacity: 1;
+.socials a[data-social][data-social=github] {
+  background-position: -58px -136px;
+}
+.socials a[data-social][data-social=discord] {
+  background-position: -87px -136px;
+}
+.socials a[data-social][data-social=bluesky] {
+  background-position: -116px -136px;
+}
+.socials a[data-social]:hover {
+  animation: hover-sheet 0.05s steps(1) forwards;
+}
+.socials a[data-social]:not(:hover) {
+  animation: not-hover-sheet 0.05s steps(1) forwards;
+}
+@keyframes hover-sheet {
+  0% {
+    background-position-y: -102px;
+  }
+  33% {
+    background-position-y: -68px;
+  }
+  66% {
+    background-position-y: -34px;
+  }
+  100% {
+    background-position-y: 0;
+  }
+}
+@keyframes not-hover-sheet {
+  100% {
+    background-position-y: -102px;
+  }
+  66% {
+    background-position-y: -68px;
+  }
+  33% {
+    background-position-y: -34px;
+  }
+  0% {
+    background-position-y: 0;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -244,36 +284,58 @@ code::selection {
   animation: MainShinyText 10s ease-in-out infinite;
   color: rgba(255, 255, 255, 0.5);
 }
-.cubes ul .Liked img {
-  height: 25px;
-  content: url("../images/icons/heart.svg");
+.cubes ul .Liked::before {
+  color: hotpink;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../images/icons/heart.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background-color: currentColor;
 }
 .cubes ul .Okay {
   color: light-dark(#000, #fff);
   font-size: 17px;
 }
-.cubes ul .Okay img {
+.cubes ul .Okay::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
   height: 17px;
-  content: url("../images/icons/thumbs-up.svg");
-  filter: invert(var(--invert-percent));
+  mask-image: url("../images/icons/thumbs-up.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background-color: var(--text-color);
 }
 .cubes ul .meh {
   color: light-dark(#222, #ddd);
   font-size: 17px;
 }
-.cubes ul .meh img {
-  content: url("../images/icons/meh.svg");
+.cubes ul .meh::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
   height: 17px;
-  filter: invert(var(--invert-percent));
+  mask-image: url("../images/icons/meh.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background-color: var(--text-color);
 }
 .cubes ul .NotPreferred {
   color: light-dark(#444, #aaa);
   font-size: 15px;
 }
-.cubes ul .NotPreferred img {
-  content: url("../images/icons/thumbs-down.svg");
-  height: 15px;
-  filter: invert(var(--invert-percent));
+.cubes ul .NotPreferred::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  mask-image: url("../images/icons/thumbs-down.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background-color: var(--text-color);
 }
 
 .about-me {
