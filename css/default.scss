@@ -171,34 +171,72 @@ code::selection {
   padding: 0;
   font-size: 0;
 
-  a {
+  $social-icons: (
+          "youtube": 0,
+          "twitch": -29px,
+          "github": -58px,
+          "discord": -87px,
+          "bluesky": -116px
+  );
+
+  a[data-social] {
+    --width: 29px;
+
     position: relative;
     display: inline-block;
+    height: 34px;
+    width: var(--width);
+    background-image: url("../images/socals_sprite.png");
+    background-repeat: no-repeat;
+    transform: scale(2);
+    transform-origin: left top;
+    image-rendering: pixelated;
+    margin-right: var(--width);
 
-    img {
-      height: 68px;
-      width: 58px;
-      image-rendering: pixelated;
-      transition: opacity 0.1s ease;
+    @include c.social-sprites($social-icons);
+    &:hover {
+      animation: hover-sheet 0.05s steps(1) forwards;
     }
-
-    img:nth-child(2) {
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
+    &:not(:hover) {
+      animation: not-hover-sheet 0.05s steps(1) forwards;
     }
-  }
-
-  a:hover{
-    img:nth-child(1) {
-      opacity: 0;
+    @keyframes hover-sheet {
+      0% {background-position-y: -102px;}
+      33% {background-position-y: -68px;}
+      66% {background-position-y: -34px;}
+      100% {background-position-y: 0;}
     }
-    img:nth-child(2) {
-      opacity: 1;
+    @keyframes not-hover-sheet {
+      100% {background-position-y: -102px;}
+      66% {background-position-y: -68px;}
+      33% {background-position-y: -34px;}
+      0% {background-position-y: 0;}
     }
   }
 }
+  //  img {
+  //    height: 68px;
+  //    width: 58px;
+  //    image-rendering: pixelated;
+  //    transition: opacity 0.1s ease;
+  //  }
+  //
+  //  img:nth-child(2) {
+  //    position: absolute;
+  //    top: 0;
+  //    left: 0;
+  //    opacity: 0;
+  //  }
+  //}
+  //
+  //a:hover{
+  //  img:nth-child(1) {
+  //    opacity: 0;
+  //  }
+  //  img:nth-child(2) {
+  //    opacity: 1;
+  //  }
+  //}
 
 .cubes {
   @include c.cubesDarkMode();
@@ -227,43 +265,64 @@ code::selection {
       font-size: 20px;
       animation: MainShinyText 10s ease-in-out infinite;
       color: rgba(255, 255, 255, 0.5);
-
-      img {
-        height: 25px;
-        content: url("../images/icons/heart.svg");
+      &::before {
+        color: hotpink;
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        mask-image: url("../images/icons/heart.svg");
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        background-color: currentColor;
       }
     }
 
     .Okay {
       color: #{light-dark}(#000, #fff);
       font-size: 17px;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        mask-image: url("../images/icons/thumbs-up.svg");
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        background-color: var(--text-color);
+      }
 
       img {
-        height: 17px;
-        content: url("../images/icons/thumbs-up.svg");
-        filter: invert(var(--invert-percent));
       }
     }
 
     .meh {
       color: #{light-dark}(#222, #ddd);
       font-size: 17px;
-
-      img {
-        content: url("../images/icons/meh.svg");
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 17px;
         height: 17px;
-        filter: invert(var(--invert-percent));
+        mask-image: url("../images/icons/meh.svg");
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        background-color: var(--text-color);
       }
     }
 
     .NotPreferred {
       color: #{light-dark}(#444, #aaa);
       font-size: 15px;
-
-      img {
-        content: url("../images/icons/thumbs-down.svg");
-        height: 15px;
-        filter: invert(var(--invert-percent));
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        mask-image: url("../images/icons/thumbs-down.svg");
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        background-color: var(--text-color);
       }
     }
   }
