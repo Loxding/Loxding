@@ -2,8 +2,9 @@
 /* imports */
 @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
   :root {
+    --curent-scheme: light;
     --background: #fff;
-    --background-gradient:linear-gradient(rgba(127, 255, 255, 0.2), rgb(255, 255, 255, 0.2));
+    --background-gradient: linear-gradient(rgba(127, 255, 255, 0.2), rgb(255, 255, 255, 0.2));
     --text-color: #000;
     --text-color-num: 0;
     --secondary-text-color: rgba(0, 0, 0, 0.75);
@@ -14,6 +15,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
+    --curent-scheme: dark;
     --background: #000;
     --background-gradient: linear-gradient(rgba(40, 250, 250, 0.2), rgba(0, 0, 0, 0.2));
     --text-color: #fff;
@@ -26,6 +28,10 @@
 }
 
 /* General Styles */
+:root {
+  color-scheme: light dark;
+}
+
 html {
   background-image: url("../images/background2.svg"), var(--background-gradient);
   background-color: var(--background);
@@ -108,86 +114,8 @@ main a:link {
 main small {
   color: gray;
 }
-main .socials img {
-  height: 100px;
-}
 main {
   line-height: 1.7;
-}
-@media (prefers-color-scheme: dark) {
-  main .cubes {
-    background: rgba(55, 55, 55, 0.5);
-    border: 2px solid color-mix(in srgb, var(--accent-color) 50%, black 50%);
-    font-weight: bold;
-  }
-}
-main .cubes {
-  border-radius: 10px;
-  vertical-align: top;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: center;
-}
-main .cubes h3 {
-  font-size: 20px;
-  text-align: center;
-}
-main .cubes ul {
-  list-style: none;
-  color: black;
-  display: inline-block;
-  margin: 10px 10px 10px 10px;
-}
-@media (prefers-color-scheme: dark) {
-  main .cubes ul {
-    padding: 2px;
-  }
-}
-@media (prefers-color-scheme: light) {
-  main .cubes ul {
-    animation: MainShinyBox 15s ease-in-out infinite;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 5px;
-    border-radius: 10%;
-  }
-}
-main .cubes ul .Liked {
-  font-size: 20px;
-  animation: MainShinyText 10s ease-in-out infinite;
-  color: rgba(255, 255, 255, 0.5);
-}
-main .cubes ul .Liked img {
-  height: 25px;
-  content: url("../images/icons/heart.svg");
-}
-main .cubes ul .Okay {
-  color: rgb(calc(128 + (var(--text-color-num) - 128) * 0.8046875), calc(128 + (var(--text-color-num) - 128) * 0.8046875), calc(128 + (var(--text-color-num) - 128) * 0.8046875));
-  font-size: 17px;
-}
-main .cubes ul .Okay img {
-  height: 17px;
-  content: url("../images/icons/thumbs-up.svg");
-  filter: invert(var(--invert-percent));
-}
-main .cubes ul .meh {
-  color: rgb(calc(128 + (var(--text-color-num) - 128) * 0.609375), calc(128 + (var(--text-color-num) - 128) * 0.609375), calc(128 + (var(--text-color-num) - 128) * 0.609375));
-  font-size: 17px;
-}
-main .cubes ul .meh img {
-  content: url("../images/icons/meh.svg");
-  height: 17px;
-  filter: invert(var(--invert-percent));
-}
-main .cubes ul .NotPreferred {
-  color: rgb(calc(128 + (var(--text-color-num) - 128) * 0.4140625), calc(128 + (var(--text-color-num) - 128) * 0.4140625), calc(128 + (var(--text-color-num) - 128) * 0.4140625));
-  font-size: 15px;
-}
-main .cubes ul .NotPreferred img {
-  content: url("../images/icons/thumbs-down.svg");
-  height: 15px;
-  filter: invert(var(--invert-percent));
 }
 main .MyName::after {
   content: "Loading";
@@ -230,7 +158,7 @@ code::selection {
 
 #wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: var(--wrapper-background);
   margin: 2em 6em;
   padding: 0.5em 2em;
@@ -239,6 +167,115 @@ code::selection {
 }
 
 /* Class Styles */
+.box {
+  flex-direction: row;
+}
+
+.socials {
+  cursor: url("../images/smack.svg") 150 150, pointer;
+  width: 25%;
+  padding: 0;
+  font-size: 0;
+}
+.socials a {
+  position: relative;
+  display: inline-block;
+}
+.socials a img {
+  height: 68px;
+  width: 58px;
+  image-rendering: pixelated;
+  transition: opacity 0.1s ease;
+}
+.socials a img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.socials a:hover img:nth-child(1) {
+  opacity: 0;
+}
+.socials a:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  .cubes {
+    background: rgba(55, 55, 55, 0.5);
+    border: 2px solid color-mix(in srgb, var(--accent-color) 50%, black 50%);
+    font-weight: bold;
+  }
+}
+.cubes {
+  border-radius: 10px;
+  vertical-align: top;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+.cubes h3 {
+  font-size: 20px;
+  text-align: center;
+}
+.cubes ul {
+  list-style: none;
+  color: black;
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
+}
+@media (prefers-color-scheme: dark) {
+  .cubes ul {
+    padding: 2px;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .cubes ul {
+    animation: MainShinyBox 15s ease-in-out infinite;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 10%;
+  }
+}
+.cubes ul .Liked {
+  font-size: 20px;
+  animation: MainShinyText 10s ease-in-out infinite;
+  color: rgba(255, 255, 255, 0.5);
+}
+.cubes ul .Liked img {
+  height: 25px;
+  content: url("../images/icons/heart.svg");
+}
+.cubes ul .Okay {
+  color: light-dark(#000, #fff);
+  font-size: 17px;
+}
+.cubes ul .Okay img {
+  height: 17px;
+  content: url("../images/icons/thumbs-up.svg");
+  filter: invert(var(--invert-percent));
+}
+.cubes ul .meh {
+  color: light-dark(#222, #ddd);
+  font-size: 17px;
+}
+.cubes ul .meh img {
+  content: url("../images/icons/meh.svg");
+  height: 17px;
+  filter: invert(var(--invert-percent));
+}
+.cubes ul .NotPreferred {
+  color: light-dark(#444, #aaa);
+  font-size: 15px;
+}
+.cubes ul .NotPreferred img {
+  content: url("../images/icons/thumbs-down.svg");
+  height: 15px;
+  filter: invert(var(--invert-percent));
+}
+
 .about-me {
   font-family: Arial, serif;
   display: inline-block;
