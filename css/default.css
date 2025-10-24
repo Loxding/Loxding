@@ -119,14 +119,6 @@ main {
 }
 main .MyName::after {
   content: "Loading";
-  /*color: white;*/
-  /*text-shadow: 1px 1px 1px gray;*/
-  /*border: 12px solid transparent;*/
-  /*background: url("../images/bio-background.png") no-repeat;*/
-  /*border-image: url("../images/bio-border.png") 16;*/
-  /*display: inline-block;*/
-  /*padding: 12px;*/
-  /*background-size: 100% 100%;*/
   animation: MyUsername 15s ease-in-out infinite;
 }
 
